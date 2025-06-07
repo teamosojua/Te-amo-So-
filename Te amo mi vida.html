@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Para So ❤️</title>
+  <style>
+    body {
+      margin: 0;
+      background: #fff6e9;
+      font-family: 'Segoe UI', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+      min-height: 100vh;
+    }
+
+    .card {
+      background: white;
+      border-radius: 20px;
+      padding: 20px;
+      max-width: 450px;
+      width: 100%;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+      text-align: center;
+      position: relative;
+    }
+
+    .message {
+      font-size: 1rem;
+      color: #5c4033;
+      margin-bottom: 20px;
+    }
+
+    .animated-tree {
+      width: 100%;
+      max-width: 240px;
+      margin: 0 auto 20px;
+      display: block;
+    }
+
+    .part {
+      stroke-dasharray: 300;
+      stroke-dashoffset: 300;
+      animation: draw 1s forwards ease-out;
+    }
+
+    .trunk {
+      fill: #1d805f;
+      animation-delay: 0s;
+    }
+
+    .branch1 { animation-delay: 0.3s; }
+    .branch2 { animation-delay: 0.6s; }
+    .branch3 { animation-delay: 0.9s; }
+    .branch4 { animation-delay: 1.2s; }
+    .branch5 { animation-delay: 1.5s; }
+
+    .ground {
+      stroke: #000;
+      stroke-width: 2;
+    }
+
+    @keyframes draw {
+      to {
+        stroke-dashoffset: 0;
+      }
+    }
+
+    .leaf {
+      opacity: 0;
+      transform: scale(0);
+      transform-origin: center;
+      animation: appear 0.5s forwards ease-in;
+    }
+
+    .leaf {
+      transform-box: fill-box;
+    }
+
+    .heart1 { animation-delay: 2s; }
+    .heart2 { animation-delay: 2.2s; }
+    .heart3 { animation-delay: 2.4s; }
+    .heart4 { animation-delay: 2.6s; }
+    .heart5 { animation-delay: 2.8s; }
+    .heart6 { animation-delay: 3s; }
+    .heart7 { animation-delay: 3.2s; }
+    .heart8 { animation-delay: 3.4s; }
+    .heart9 { animation-delay: 3.6s; }
+    .heart10 { animation-delay: 3.8s; }
+
+    @keyframes appear {
+      to {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+
+    .counter {
+      margin-top: 10px;
+      font-size: 0.95rem;
+      color: #333;
+    }
+
+    .label {
+      font-weight: bold;
+      color: #5c4033;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="message">
+      Sos lo mejor que pueda existir en este universo.<br>
+      Te merecés esto y mucho más.<br>
+      Esto es una pequeña muestra de gratitud porque sin vos<br>
+      yo no sabría hacer todo esto.<br>
+      Te adoro, soy tu fan #1 ❤️
+    </div>
+
+    <!-- 🌳 Árbol animado con corazones bonitos -->
+    <svg class="animated-tree" viewBox="0 0 120 200" xmlns="http://www.w3.org/2000/svg">
+      <!-- Suelo negro -->
+      <line x1="0" y1="200" x2="120" y2="200" class="ground" />
+
+      <!-- Tronco triangular -->
+      <polygon points="50,200 70,200 60,80" class="trunk"/>
+
+      <!-- Ramas -->
+      <path d="M60 120 Q45 110 35 95" class="part branch1" stroke="#1d805f" fill="none" stroke-width="3" stroke-linecap="round"/>
+      <path d="M60 115 Q72 105 80 90" class="part branch2" stroke="#1d805f" fill="none" stroke-width="3" stroke-linecap="round"/>
+      <path d="M60 105 Q48 90 42 75" class="part branch3" stroke="#1d805f" fill="none" stroke-width="2.5" stroke-linecap="round"/>
+      <path d="M60 100 Q65 85 68 70" class="part branch4" stroke="#1d805f" fill="none" stroke-width="2.5" stroke-linecap="round"/>
+      <path d="M60 90 Q55 75 53 60" class="part branch5" stroke="#1d805f" fill="none" stroke-width="2" stroke-linecap="round"/>
+
+      <!-- Hojas en forma de corazón mejoradas -->
+      <g fill="#ff6f91">
+        <path class="leaf heart1" d="M40 80 C40 75, 44 70, 48 75 C52 70, 56 75, 56 80 C56 85, 48 93, 48 93 C48 93, 40 85, 40 80 Z"/>
+        <path class="leaf heart2" d="M75 80 C75 75, 79 70, 83 75 C87 70, 91 75, 91 80 C91 85, 83 93, 83 93 C83 93, 75 85, 75 80 Z"/>
+        <path class="leaf heart3" d="M50 60 C50 55, 53 50, 57 55 C61 50, 64 55, 64 60 C64 65, 57 72, 57 72 C57 72, 50 65, 50 60 Z"/>
+        <path class="leaf heart4" d="M35 100 C35 95, 39 90, 43 95 C47 90, 51 95, 51 100 C51 105, 43 113, 43 113 C43 113, 35 105, 35 100 Z"/>
+        <path class="leaf heart5" d="M70 105 C70 100, 74 95, 78 100 C82 95, 86 100, 86 105 C86 110, 78 118, 78 118 C78 118, 70 110, 70 105 Z"/>
+        <path class="leaf heart6" d="M58 88 C58 83, 61 78, 65 83 C69 78, 72 83, 72 88 C72 93, 65 100, 65 100 C65 100, 58 93, 58 88 Z"/>
+        <path class="leaf heart7" d="M45 72 C45 68, 48 64, 52 68 C56 64, 59 68, 59 72 C59 76, 52 83, 52 83 C52 83, 45 76, 45 72 Z"/>
+        <path class="leaf heart8" d="M62 66 C62 62, 65 58, 69 62 C73 58, 76 62, 76 66 C76 70, 69 77, 69 77 C69 77, 62 70, 62 66 Z"/>
+        <path class="leaf heart9" d="M48 110 C48 105, 52 101, 56 105 C60 101, 64 105, 64 110 C64 115, 56 122, 56 122 C56 122, 48 115, 48 110 Z"/>
+        <path class="leaf heart10" d="M70 72 C70 68, 74 64, 78 68 C82 64, 85 68, 85 72 C85 76, 78 83, 78 83 C78 83, 70 76, 70 72 Z"/>
+      </g>
+    </svg>
+
+    <div class="counter">
+      <span class="label">Mi amor por vos empezó hace:</span><br>
+      <span id="time"></span>
+    </div>
+  </div>
+
+  <script>
+    function updateCounter() {
+      const start = new Date("2023-06-07T00:00:00");
+      const now = new Date();
+      const diff = now - start;
+
+      const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
+      const minutes = Math.floor((diff / (1000 * 60)) % 60);
+      const seconds = Math.floor((diff / 1000) % 60);
+
+      document.getElementById("time").innerText =
+        `${days} días, ${hours} hs, ${minutes} min, ${seconds} seg`;
+    }
+
+    setInterval(updateCounter, 1000);
+    updateCounter();
+  </script>
+</body>
+</html>
